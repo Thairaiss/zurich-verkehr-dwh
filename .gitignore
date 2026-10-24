@@ -1,0 +1,13 @@
+# Virtuelle Umgebung - NIE committen (ist riesig, PC-spezifisch)
+.venv/
+venv/
+
+# Python-Zwischendateien
+__pycache__/
+*.pyc
+
+# PyCharm-Einstellungen
+.idea/
+
+# Rohdaten - gehören nicht ins Git (zu gross, einfach neu ladbar)
+data/

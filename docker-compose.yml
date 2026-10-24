@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: dwh-postgres
+    environment:
+      POSTGRES_USER: tim
+      POSTGRES_PASSWORD: dev_passwort_123
+      POSTGRES_DB: dwh
+    ports:
+      - "5432:5432"
+    volumes:
+      - dwh_data:/var/lib/postgresql/data
+
+volumes:
+  dwh_data:
